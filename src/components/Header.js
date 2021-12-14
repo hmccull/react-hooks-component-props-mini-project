@@ -1,12 +1,10 @@
 import React from "react";
-import App from "./App";
-import blogData from "../data/blog";
 
-function Header(props) {
-    
+function Header({ name }) {
+    console.log('FROM HEADER: ', name)
     return (
         <header>
-            <h1>{props.name}</h1>
+            <h1>{name}</h1>
         </header>
     )
 }
